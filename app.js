@@ -10,7 +10,9 @@ const PORT = process.env.PGPORT || 80;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
+app.get('/', (req, res) => {
+  res.send('WELCOME TO FINAL PROJECT 2')
+})
 app.use(userRoute);
 app.use(photoRoute);
 app.use(socialMediaRoute);
