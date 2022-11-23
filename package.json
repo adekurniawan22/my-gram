@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test npx jest --runInBand --detectOpenHandles --forceExit",
-    "db:create:test": "NODE_ENV=test npx sequelize db:create",
-    "db:migrate:test": "NODE_ENV=test npx sequelize db:migrate",
-    "start:production": "npx sequelize db:migrate && node app.js",
-    "buatdeploy": "npx sequelize db:migrate"
+    "jalan": "node app.js",
   },
   "author": "",
   "license": "ISC",
